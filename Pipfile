@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 django = "*"
+gunicorn = "*"
+dj-database-url = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.5"
