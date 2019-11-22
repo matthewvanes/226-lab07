@@ -6,11 +6,11 @@ import game.constants
 # Create your models here
 
 def validate_col_range(value):
-    if value < 0 or value >= game.constants.MAX_COLS - 1:
+    if value < 0 or value >= game.constants.MAX_COLS:
         raise ValidationError('Out of range',)
 
 def validate_row_range(value):
-    if value < 0 or value >= game.constants.MAX_ROWS - 1:
+    if value < 0 or value >= game.constants.MAX_ROWS:
         raise ValidationError('Out of range',)
 
 def validate_unique_tag(value):
